@@ -4,7 +4,10 @@ const menu = document.getElementById('mobile-menu');
 const counters = document.querySelectorAll('.counter');
 let scrollStarted = false;
 let header = document.querySelector('.main-header');
-let sectionA = document.querySelector('.section-a');
+let sectionA = document.querySelector('.section-a') || document.querySelector('.section-ab') || document.querySelector('.section-aa');
+if (!sectionA) {
+    console.error("Unable to find .section-a, .section-ab, or .section-aa.");
+}
 let lastScrollTop = 0;
 
 btn.addEventListener('click', navToggle);

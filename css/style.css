@@ -159,7 +159,7 @@ section {
 }
 
 .section-b {
-  background-image: url('../assets/images/serp3.webp');
+  background-image: url('../assets/images/serp3.png');
 }
 
 .section-c {
@@ -176,6 +176,50 @@ section {
 
 .section-f {
   background-image: url('../assets/images/TSLteam.webp');
+}
+
+.section-aa {
+  background-image: url('../assets/images/ytd.jpg');
+}
+
+.section-ba {
+  background-image: url('../assets/images/seeker.webp');
+}
+
+.section-ca {
+  background-image: url('../assets/images/arm.webp');
+}
+
+.section-da {
+  background-image: url('../assets/images/bevo1.1.webp');
+}
+
+.section-ea {
+  background-image: url('../assets/images/rash2.webp');
+}
+
+.section-fa {
+  background-image: url('../assets/images/fastrac.jpg');
+}
+
+.section-ab {
+  background-image: url('../assets/images/serp.webp');
+}
+
+.section-bb {
+  background-image: url('../assets/images/serp3.webp');
+}
+
+.section-cb {
+  background-image: url('../assets/images/vision.webp');
+}
+
+.section-db {
+  background-image: url('../assets/images/tma.webp');
+}
+
+.section-eb {
+  background-image: url('../assets/images/balloon4n.webp');
 }
 
 .btn {
