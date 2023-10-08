@@ -257,6 +257,13 @@ section {
   background-image: url('../assets/images/serp3.webp');
 }
 
+.section-av {
+  background-image: url('../assets/images/vision.webp');
+}
+.section-atma {
+  background-image: url('../assets/images/tma.webp');
+}
+
 .btn {
   position: relative;
   display: inline-block;
@@ -684,12 +691,12 @@ footer ul li a:hover {
 
 .serpent-container {
   max-width: 1300px; /* This ensures the text doesn't span the entire width. Adjust as needed. */
-  margin: 100px auto 0px; /* Centers the container and adds spacing above and below */
+  margin: 0px auto 0px; /* Centers the container and adds spacing above and below */
   padding: 20px; /* Padding around the content for spacing */
   background-color: var(--color-black); /* Background color */
   color: var(--color-white); /* Text color */
   height: auto
-  margin-top: 20px; /* Reduced spacing */
+/* Reduced spacing */
 }
 
 .section-para h3 {
@@ -713,10 +720,36 @@ footer ul li a:hover {
 
 .static-image-container {
   text-align: center;  /* Center the image if it's smaller than the container */
-  padding: 20px 0;     /* Add some space around the image */
+  padding: 20px 0;    /* Add some space around the image */
 }
 
 .static-image-container img {
   max-width: 100%;  /* Ensure the image doesn't overflow its container */
   height: auto;     /* Maintain the image's aspect ratio */
+}
+
+.research-container {
+  max-width: 1300px; /* This ensures the text doesn't span the entire width. Adjust as needed. */
+  margin: 100px auto 0px; /* Centers the container and adds spacing above and below */
+  padding: 20px; /* Padding around the content for spacing */
+  background-color: var(--color-black); /* Background color */
+  color: var(--color-white); /* Text color */
+  height: auto
+}
+
+.research-container .entry-content a {
+  color: #99431f; /* burnt orange color */
+}
+
+.research-container .entry-content a:hover {
+  color: #cc5500; /* slightly brighter shade for hover effect */
+}
+
+.facilities-container {
+  max-width: 1300px; /* This ensures the text doesn't span the entire width. Adjust as needed. */
+  margin: 100px auto 0px; /* Centers the container and adds spacing above and below */
+  padding: 20px; /* Padding around the content for spacing */
+  background-color: var(--color-black); /* Background color */
+  color: var(--color-white); /* Text color */
+  height: auto
 }
