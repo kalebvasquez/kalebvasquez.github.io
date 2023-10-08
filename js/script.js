@@ -4,9 +4,10 @@ const menu = document.getElementById('mobile-menu');
 const counters = document.querySelectorAll('.counter');
 let scrollStarted = false;
 let header = document.querySelector('.main-header');
-let sectionA = document.querySelector('.section-a') || document.querySelector('.section-ab') || document.querySelector('.section-aa') || document.querySelector('.section-ac');
+let sectionA = document.querySelector('.section-a') || document.querySelector('.section-ab') || document.querySelector('.section-aa') || document.querySelector('.section-ac')
+|| document.querySelector('.about-us-container') || document.querySelector('.section-awb') || document.querySelector('.section-aserp');
 if (!sectionA) {
-    console.error("Unable to find .section-a, .section-ab, .section-aa, or .section-ac.");
+    console.error("Unable to find .section-a, .section-ab, .section-aa, .section-ac, .about-us-container, .section-awb, or .section-aserp");
 }
 let lastScrollTop = 0;
 

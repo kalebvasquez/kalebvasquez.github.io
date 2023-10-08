@@ -32,34 +32,28 @@ ul {
   list-style: none;
 }
 
-:root {
-  --who-we-are-color: #8956ff;
-  --our-goals-color: rgb(64, 255, 160);
-  --our-history-color: rgb(255, 124, 124);
+/* Default state */
+.header-who-we-are,
+.header-our-goals,
+.header-our-history {
+    color: var(--color-white);
+    transition: color 0.3s ease;
 }
 
-.section-para h2 {
-  transition: color 0.3s, transform 0.3s;
-  cursor: pointer;  /* Indicate it's interactable */
+/* Hover states */
+.header-who-we-are:hover {
+    color: #99431f;
 }
 
-.section-para h2:nth-of-type(1):hover {
-  color: var(--who-we-are-color);
-  transform: translateY(-5px);
+.header-our-goals:hover {
+    color: #99431f;
 }
 
-.section-para h2:nth-of-type(2):hover {
-  color: var(--our-goals-color);
-  transform: translateY(-5px);
-}
-
-.section-para h2:nth-of-type(3):hover {
-  color: var(--our-history-color);
-  transform: translateY(-5px);
+.header-our-history:hover {
+    color: #99431f;
 }
 
 /* Header & Navbar */
-
 
 
 .main-header {
@@ -253,6 +247,14 @@ section {
 
 .section-ac {
   background-image: url('../assets/images/black.png');
+}
+
+.section-awb {
+  background-image: url('../assets/images/balloon4n.webp');
+}
+
+.section-aserp {
+  background-image: url('../assets/images/serp3.webp');
 }
 
 .btn {
@@ -644,102 +646,77 @@ footer ul li a:hover {
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-/* ... (previous CSS code) ... */
-
-
-.section-landing {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.about-us-container {
+  max-width: 1300px; /* This ensures the text doesn't span the entire width. Adjust as needed. */
+  margin: 100px auto 0px; /* Centers the container and adds spacing above and below */
+  padding: 20px; /* Padding around the content for spacing */
+  background-color: var(--color-black); /* Background color */
+  color: var(--color-white); /* Text color */
+  height: auto
 }
 
-.section-content {
-  padding: 50px 20px;
-  background-color: var(--color-black);
-  color: var(--color-white);
-}
-
-.section-para {
-  max-width: 100%;
-  margin: 100 auto;
-  padding: 50px 0;
-}
-
-.section-para h2 {
-  font-size: 32px;
-  margin-top: 40px;
-  margin-bottom: 20px;
+.section-para h3 {
+  font-size: 24px; /* Adjust the size of the subheadings if needed */
+  margin-top: 30px; /* Spacing above each subheading */
 }
 
 .section-para p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  text-align: justify;
+  margin-bottom: 10px; /* Spacing after each paragraph */
 }
 
-@media (max-width: 768px) {
-  .section-para {
-      max-width: 90%;
-      padding: 25px 0;
-  }
+.weather-balloon-container {
+  max-width: 1300px; /* This ensures the text doesn't span the entire width. Adjust as needed. */
+  margin: 100px auto 0px; /* Centers the container and adds spacing above and below */
+  padding: 20px; /* Padding around the content for spacing */
+  background-color: var(--color-black); /* Background color */
+  color: var(--color-white); /* Text color */
+  height: auto
 }
 
-.section-ac {
-  height: 700; 
-  padding: 100px 0;
-  padding-bottom: 20px;
+.section-para h3 {
+  font-size: 24px; /* Adjust the size of the subheadings if needed */
+  margin-top: 30px; /* Spacing above each subheading */
 }
 
-.section-ac .section-inner {
-  position: relative; 
-  bottom: unset; 
-  left: unset;
-  padding: 0 50px; 
-  max-width: 100%;
+.section-para p {
+  margin-bottom: 10px; /* Spacing after each paragraph */
 }
 
-@media (max-width: 768px) {
-  .section-ac .section-inner {
-      padding: 0 20px;
-  }
+.serpent-container {
+  max-width: 1300px; /* This ensures the text doesn't span the entire width. Adjust as needed. */
+  margin: 100px auto 0px; /* Centers the container and adds spacing above and below */
+  padding: 20px; /* Padding around the content for spacing */
+  background-color: var(--color-black); /* Background color */
+  color: var(--color-white); /* Text color */
+  height: auto
+  margin-top: 20px; /* Reduced spacing */
 }
 
-.section-ac {
-  margin-top: 100px; /* Adjust this value as needed */
+.section-para h3 {
+  font-size: 24px; /* Adjust the size of the subheadings if needed */
+  margin-top: 30px; /* Spacing above each subheading */
 }
 
-.section-content h2 {
-  transition: transform 0.3s ease, color 0.3s ease;
-  cursor: pointer; /* indicates an actionable item when hovering */
+.section-para p {
+  margin-bottom: 10px; /* Spacing after each paragraph */
 }
 
-.section-content h2:hover {
-  transform: translateY(-10px); /* Adjust this value if you want more or less lift */
+.inline-list {
+  list-style: decimal outside;
+  padding-left: 20px; /* Adjust based on your design */
 }
 
-.section-inner p {
-  animation: fadeInUp 0.5s ease-in-out 0.4s; /* Adjust delay as needed */
-  animation-fill-mode: both; /* Stop from showing at start */
+.inline-list li {
+  display: inline;
+  margin-right: 15px;
 }
 
-.container {
-  max-width: 950px; /* Adjust as needed */
-  margin: 0 auto;    /* This will center the content */
-  padding: 0 20px;   /* Adds some space on the left and right */
+.static-image-container {
+  text-align: center;  /* Center the image if it's smaller than the container */
+  padding: 20px 0;     /* Add some space around the image */
 }
 
-@media (max-width: 600px) {
-  .container {
-    padding: 0 10px;  /* Smaller padding for smaller screens */
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1400px;  /* Wider container for very large screens, if needed */
-  }
+.static-image-container img {
+  max-width: 100%;  /* Ensure the image doesn't overflow its container */
+  height: auto;     /* Maintain the image's aspect ratio */
 }
