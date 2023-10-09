@@ -606,13 +606,13 @@ footer ul li a:hover {
   }
 
   .main-header {
-    justify-content: center !important; /* center everything in the header on mobile */
+    justify-content: flex-start !important; /* center everything in the header on mobile */
   }
 
   .logo {
     position: absolute !important;
-    left: 50% !important; /* Move the logo to the center */
-    transform: translateX(-50%) !important; /* Adjust for the logo's own width to perfectly center it */
+    left: 55% !important; /* Move the logo to the center */
+    transform: translateX(-55%) !important; /* Adjust for the logo's own width to perfectly center it */
   }
 
   .hamburger {
