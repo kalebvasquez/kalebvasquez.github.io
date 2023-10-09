@@ -611,8 +611,8 @@ footer ul li a:hover {
 
   .logo {
     position: absolute !important;
-    left: 55% !important; /* Move the logo to the center */
-    transform: translateX(-55%) !important; /* Adjust for the logo's own width to perfectly center it */
+    left: 55.5% !important; /* Move the logo to the center */
+    transform: translateX(-55.5%) !important; /* Adjust for the logo's own width to perfectly center it */
   }
 
   .hamburger {
