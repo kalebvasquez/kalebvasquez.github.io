@@ -602,7 +602,23 @@ footer ul li a:hover {
 @media (max-width: 600px) {
   .section-inner {
     bottom: 75px;
-    left: 20px;
+    left: 20px !important;
+  }
+
+  .main-header {
+    justify-content: center !important; /* center everything in the header on mobile */
+  }
+
+  .logo {
+    position: absolute !important;
+    left: 50% !important; /* Move the logo to the center */
+    transform: translateX(-50%) !important; /* Adjust for the logo's own width to perfectly center it */
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 28px;
+    right: 20px;
   }
 
   .section-inner h2 {
