@@ -159,13 +159,15 @@ section {
 .section-inner h3 {
   font-size: 22px;
   font-weight: 300;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
+  margin-top: 2px;
   animation: fadeInUp 0.5s ease-in-out;
 }
 
 .section-inner h2 {
   font-size: 50px;
-  margin-bottom: -5px;
+  margin-bottom: 2px;
+  margin-top: 2px;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
   animation-fill-mode: both; /* Stop from showing at start */
 }
@@ -182,15 +184,15 @@ section {
 }
 
 .section-b {
-  background-image: url('../assets/images/serp3.png');
+  background-image: url('../assets/images/serpti2.png');
 }
 
 .section-c {
-  background-image: url('../assets/images/balloon4n.webp');
+  background-image: url('../assets/images/wb4.jpg');
 }
 
 .section-d {
-  background-image: url('../assets/images/bevo1.1.webp');
+  background-image: url('../assets/images/bevo4.jpg');
 }
 
 .section-e {
@@ -226,7 +228,7 @@ section {
 }
 
 .section-ab {
-  background-image: url('../assets/images/serp.webp');
+  background-image: url('../assets/images/onmis2.jpg');
 }
 
 .section-bb {
@@ -242,7 +244,7 @@ section {
 }
 
 .section-eb {
-  background-image: url('../assets/images/balloon4n.webp');
+  background-image: url('../assets/images/wb4.jpg');
 }
 
 .section-ac {
@@ -250,7 +252,7 @@ section {
 }
 
 .section-awb {
-  background-image: url('../assets/images/balloon4n.webp');
+  background-image: url('../assets/images/wb4.jpg');
 }
 
 .section-aserp {
@@ -260,8 +262,13 @@ section {
 .section-av {
   background-image: url('../assets/images/vision.webp');
 }
+
 .section-atma {
   background-image: url('../assets/images/tma.webp');
+}
+
+.section-ju {
+  background-image: url('../assets/images/utexas2.jpg');
 }
 
 .btn {
@@ -752,4 +759,161 @@ footer ul li a:hover {
   background-color: var(--color-black); /* Background color */
   color: var(--color-white); /* Text color */
   height: auto
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.blog-post {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #0a0a0a;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.separator {
+  border: 0;
+  height: 1px;
+  background: #ebebeb;
+  margin: 10px 0;
+}
+
+.blog-date {
+  font-size: 0.9em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+
+.blog-image {
+  max-width: 100%;
+  margin: 0 auto 20px; /* Centered the image by auto margin */
+  display: block; /* Make the image a block element to respect margins */
+}
+
+.blog-content {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+.blog-listing {
+    max-width: 800px;
+    margin: 150px auto; /* Space to prevent overlap with the header */
+    padding: 20px;
+    background-color: #0a0a0a;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.blog-summary {
+    border-bottom: 1px solid #ffffff; /* Separate individual blog summaries */
+    padding-bottom: 20px; /* Padding at the bottom of each summary */
+    margin-bottom: 20px; /* Margin between summaries */
+}
+
+.blog-summary h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.blog-summary h2 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.blog-summary p {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.post-meta {
+    font-size: 0.9em;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #99431f; /* Adjust color for the "Read More" link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.blog-post {
+  border-radius: 15px;
+  /* ... other styles ... */
+}
+
+.section.ablog {
+  border-radius: 10px; /* This will give rounded corners */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* This will add a subtle shadow */
+
+  /* ... other styles ... */
+}
+
+.join-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0; /* Offset for header overlap */
+  padding: 0 20px; /* Added some padding on the sides for smaller screens */
+  max-width: 960px; /* Ensures the content doesn't span the entire screen width */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -250px;
+}
+
+.section {
+  text-align: center;
+  margin-bottom: 50px;
+  width: 100%; /* Adjust as needed */
+}
+
+.boxed-link a {
+  display: block;
+  border: 2px solid var(--color-white);
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-white);
+  transition: background-color 0.3s;
+}
+
+.boxed-link a:hover {
+  background-color: #99431f; /* or whatever color you desire */
+  color: var(--color-black);
+}
+
+.date-box {
+  display: inline-block;
+  border: 1px solid var(--color-white);
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+  font-weight: bold;
+  color: #99431f; /* Adjust as needed */
 }

@@ -6,9 +6,9 @@ let scrollStarted = false;
 let header = document.querySelector('.main-header');
 let sectionA = document.querySelector('.section-a') || document.querySelector('.section-ab') || document.querySelector('.section-aa') || document.querySelector('.section-ac')
 || document.querySelector('.about-us-container') || document.querySelector('.section-awb') || document.querySelector('.section-aserp') || document.querySelector('.section-av')
-|| document.querySelector('.section-atma');
+|| document.querySelector('.section-atma') || document.querySelector('.section-ablog') || document.querySelector('.section-abloga') || document.querySelector('.section-ju');
 if (!sectionA) {
-    console.error("Unable to find .section-a, .section-ab, .section-aa, .section-ac, .about-us-container, .section-awb, .section-aserp. .section-av, or .section-tma");
+    console.error("Unable to find .section-a, .section-ab, .section-aa, .section-ac, .about-us-container, .section-awb, .section-aserp. .section-av, .section-tma, .section-ablog, .section-abloga, or .section-abloga");
 }
 let lastScrollTop = 0;
 
