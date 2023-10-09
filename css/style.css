@@ -72,7 +72,7 @@ ul {
 }
 
 .main-header .desktop-main-menu ul li a {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 .hidden-header * {
   opacity: 0;
@@ -150,24 +150,24 @@ section {
 }
 
 .section-inner h4 {
-  font-size: 22px;
+  font-size: 22px !important;
   font-weight: 300;
   margin-bottom: 0px;
   animation: fadeInUp 0.5s ease-in-out;
 }
 
 .section-inner h3 {
-  font-size: 22px;
+  font-size: 22px !important;
   font-weight: 300;
-  margin-bottom: 2px;
-  margin-top: 2px;
+  margin-bottom: 0px !important;
+  margin-top: 2px !important;
   animation: fadeInUp 0.5s ease-in-out;
 }
 
 .section-inner h2 {
-  font-size: 50px;
-  margin-bottom: 2px;
-  margin-top: 2px;
+  font-size: 50px !important;
+  margin-bottom: 2px !important;
+  margin-top: 0px !important;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
   animation-fill-mode: both; /* Stop from showing at start */
 }
