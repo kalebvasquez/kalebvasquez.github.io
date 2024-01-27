@@ -1,0 +1,1119 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: var(--color-black);
+  color: var(--color-white);
+  font-family: 'Familjen Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Default state */
+.header-who-we-are,
+.header-our-goals,
+.header-our-history {
+    color: var(--color-white);
+    transition: color 0.3s ease;
+}
+
+/* Hover states */
+.header-who-we-are:hover {
+    color: #99431f;
+}
+
+.header-our-goals:hover {
+    color: #99431f;
+}
+
+.header-our-history:hover {
+    color: #99431f;
+}
+
+/* Header & Navbar */
+
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+  transition: background-color 0.5s ease, opacity 0.5s ease; 
+  will-change: opacity, background-color;
+}
+
+.main-header .desktop-main-menu ul li a {
+  font-weight: bold !important;
+}
+.hidden-header * {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+/* Logo */
+
+.logo {
+  width: 185px;
+  height: auto;
+}
+
+.logo img {
+  display: block;
+  width: 75%;
+  height: auto;
+}
+
+/* Desktop Menu */
+
+.desktop-main-menu {
+  margin-right: 50px;
+}
+
+.desktop-main-menu ul {
+  display: flex;
+}
+
+.desktop-main-menu ul li {
+  position: relative;
+  margin-right: 20px;
+  padding-bottom: 2px;
+}
+
+/* Menu Item Bottom Border */
+
+.desktop-main-menu ul li a::after {
+  content: '';
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #99431f;
+  transform: scaleX(0);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transform-origin: right center;
+}
+
+.desktop-main-menu ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+  transition-duration: 0.4s;
+}
+
+/* Sections */
+
+section {
+  position: relative;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-inner {
+  position: absolute;
+  bottom: 200px;
+  left: 150px;
+  max-width: 560px;
+  padding: 0;
+}
+
+.section-inner h4 {
+  font-size: 22px !important;
+  font-weight: 300;
+  margin-bottom: 0px;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.section-inner h3 {
+  font-size: 22px !important;
+  font-weight: 300;
+  margin-bottom: 2px !important;
+  margin-top: 0px !important;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.section-inner h2 {
+  font-size: 50px !important;
+  margin-bottom: 2px !important;
+  margin-top: 0px !important;
+  animation: fadeInUp 0.5s ease-in-out 0.2s;
+  animation-fill-mode: both; /* Stop from showing at start */
+}
+
+.section-inner a {
+  animation: fadeInUp 0.5s ease-in-out 0.4s;
+  animation-fill-mode: both; /* Stop from showing at start */
+}
+
+.video-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* Background Images */
+
+/* .section-a {
+  background-image: url('../assets/images/main2.gif');
+} */
+
+.section-b {
+  background-image: url('../assets/images/leva2.jpg');
+}
+
+.section-c {
+  background-image: url('../assets/images/ut4.jpg');
+}
+
+.section-d {
+  background-image: url('../assets/images/bevo4.jpg');
+}
+
+.section-e {
+  background-image: url('../assets/images/rash2.webp');
+}
+
+.section-f {
+  background-image: url('../assets/images/joinus2.jpg');
+}
+
+.section-aa {
+  background-image: url('../assets/images/pastmiss2.png');
+}
+
+.section-ba {
+  background-image: url('../assets/images/seeker1.jpg');
+}
+
+.section-ca {
+  background-image: url('../assets/images/arm2.jpg');
+}
+
+.section-da {
+  background-image: url('../assets/images/bevo3.jpg');
+}
+
+.section-ea {
+  background-image: url('../assets/images/pacee.JPG');
+}
+
+.section-fa {
+  background-image: url('../assets/images/minotaur8.jpg');
+}
+
+.section-ab {
+  background-image: url('../assets/images/onmis2.jpg');
+}
+
+.section-bb {
+  background-image: url('../assets/images/serp3.webp');
+}
+
+.section-cb {
+  background-image: url('../assets/images/vision.webp');
+}
+
+.section-db {
+  background-image: url('../assets/images/tma.webp');
+}
+
+.section-eb {
+  background-image: url('../assets/images/wb4.jpg');
+}
+
+.section-ac {
+  background-image: url('../assets/images/black.png');
+}
+
+.section-awb {
+  background-image: url('../assets/images/aboutuseco.jpg');
+}
+
+.section-aserp {
+  background-image: url('../assets/images/serp3.webp');
+}
+
+.section-av {
+  background-image: url('../assets/images/vision.webp');
+}
+
+.section-atma {
+  background-image: url('../assets/images/tma.webp');
+}
+
+.section-ju {
+  background-image: url('../assets/images/utexas2.jpg');
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  min-width: 130px;
+  padding: 15px 50px;
+  margin-top: 10px;
+  border: 2px solid var(--color-white);
+  font-weight: 700;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.btn:hover span {
+  color: var(--color-black);
+}
+
+.btn .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  z-index: -1;
+  transform: translateY(100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn:hover .hover {
+  transform: translateY(0);
+}
+
+.scroll-arrow {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fadeBounce 5s infinite;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  padding: 55px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer ul li {
+  color: #aaa;
+  font-size: 13px;
+  line-height: 2.5;
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+
+footer ul li a {
+  color: var(--color-white);
+  transition: color 0.6s;
+}
+
+footer ul li a:hover {
+  color: #aaa;
+}
+
+/* Hamburger Menu */
+
+.hamburger {
+  position: fixed;
+  top: 28px;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: var(--color-white);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(5px);
+}
+
+.hamburger-bottom {
+  transform: translateY(10px);
+}
+
+/* New styles for hover effect */
+.hamburger:hover .hamburger-top,
+.hamburger:hover .hamburger-middle,
+.hamburger:hover .hamburger-bottom {
+  background: #99431f;  /* Change to desired color */
+}
+
+.hamburger.open:hover .hamburger-top,
+.hamburger.open:hover .hamburger-bottom {
+  background: #99431f;  /* Change to desired color */
+}
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+/* Overlay */
+
+.overlay-show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.stop-scrolling {
+  overflow: hidden;
+}
+
+/* Hide Mobile Main Items */
+
+.mobile-only {
+  display: none;
+}
+
+/* Mobile Menu */
+
+.mobile-main-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background-color: var(--color-black);
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.mobile-main-menu ul li a {
+  font-weight: bold;
+}
+
+/* Bring Menu from Right */
+
+.show-menu {
+  transform: translateX(0);
+}
+
+.mobile-main-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 50px;
+  width: 100%;
+}
+
+.mobile-main-menu ul li {
+  border-bottom: 1px solid #555;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  text-align: right;
+  width: 100%;
+}
+
+.mobile-main-menu ul li a {
+  color: var(--color-white);
+  transition: color 0.6s;
+}
+
+.mobile-main-menu ul li a:hover {
+  color: #99431f;
+}
+
+/* Inner Pages */
+
+.bg-falcon-9 {
+  background-image: url('../assets/images/falcon-9.webp');
+}
+
+.bg-falcon-heavy {
+  background-image: url('../assets/images/falcon-heavy.webp');
+}
+
+.bg-dragon {
+  background-image: url('../assets/images/dragon.webp');
+}
+
+.section-animate {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.section-inner-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+
+.section-inner-center h3 {
+  font-size: 100px;
+  margin-bottom: 15px;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.section-inner-center p {
+  font-size: 20px;
+  animation: fadeInUp 0.5s ease-in-out 0.2s;
+  animation-fill-mode: both;
+}
+
+/* Stats */
+
+.stats {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.stats div span {
+  font-size: 160px;
+}
+
+.stats div h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* Animations */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(140px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeBounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 960px) {
+  /* Hide Desktop Menu */
+
+  .desktop-main-menu {
+    display: none;
+  }
+
+  /* Show Mobile Main Items */
+
+  .mobile-only {
+    display: block;
+  }
+
+  .section-inner-center h3 {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-inner {
+    bottom: 75px;
+    left: 20px !important;
+  }
+
+  .main-header {
+    justify-content: flex-start !important; /* center everything in the header on mobile */
+  }
+
+  .logo {
+    position: absolute !important;
+    left: 55.5% !important; /* Move the logo to the center */
+    transform: translateX(-55.5%) !important; /* Adjust for the logo's own width to perfectly center it */
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 28px;
+    right: 20px;
+  }
+
+  .section-inner h2 {
+    font-size: 40px;
+  }
+
+  footer ul li:first-child {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer ul li {
+    margin-right: 15px;
+  }
+
+  .logo {
+    width: 150px;
+    margin: auto;
+  }
+
+  .section-inner-center h3 {
+    font-size: 50px;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .stats div {
+    margin-bottom: 20px;
+  }
+}
+
+.black-background {
+  background-color: var(--color-black);
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+::selection {
+  background-color: #99431f;
+  color: #fff;
+}
+
+/* For better cross-browser compatibility */
+::-moz-selection {
+  background-color: #99431f;
+  color: #fff;
+}
+
+.faded-header {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.about-us-container {
+  max-width: 1300px; /* This ensures the text doesn't span the entire width. Adjust as needed. */
+  margin: 100px auto 0px; /* Centers the container and adds spacing above and below */
+  padding: 20px; /* Padding around the content for spacing */
+  background-color: var(--color-black); /* Background color */
+  color: var(--color-white); /* Text color */
+  height: auto
+}
+
+.section-para h3 {
+  font-size: 24px; /* Adjust the size of the subheadings if needed */
+  margin-top: 30px; /* Spacing above each subheading */
+}
+
+.section-para p {
+  margin-bottom: 10px; /* Spacing after each paragraph */
+}
+
+.weather-balloon-container {
+  max-width: 1300px; /* This ensures the text doesn't span the entire width. Adjust as needed. */
+  margin: 50px auto 0px; /* Centers the container and adds spacing above and below */
+  padding: 20px; /* Padding around the content for spacing */
+  background-color: var(--color-black); /* Background color */
+  color: var(--color-white); /* Text color */
+  height: auto
+}
+
+.section-para h3 {
+  font-size: 24px; /* Adjust the size of the subheadings if needed */
+  margin-top: 30px; /* Spacing above each subheading */
+}
+
+.section-para p {
+  margin-bottom: 10px; /* Spacing after each paragraph */
+}
+
+.serpent-container {
+  max-width: 1300px; /* This ensures the text doesn't span the entire width. Adjust as needed. */
+  margin: 0px auto 0px; /* Centers the container and adds spacing above and below */
+  padding: 20px; /* Padding around the content for spacing */
+  background-color: var(--color-black); /* Background color */
+  color: var(--color-white); /* Text color */
+  height: auto
+/* Reduced spacing */
+}
+
+.section-para h3 {
+  font-size: 24px; /* Adjust the size of the subheadings if needed */
+  margin-top: 30px; /* Spacing above each subheading */
+}
+
+.section-para p {
+  margin-bottom: 10px; /* Spacing after each paragraph */
+}
+
+.inline-list {
+  list-style: decimal outside;
+  padding-left: 20px; /* Adjust based on your design */
+}
+
+.inline-list li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.static-image-container {
+  text-align: center;  /* Center the image if it's smaller than the container */
+  padding: 20px 0;    /* Add some space around the image */
+}
+
+.static-image-container img {
+  max-width: 100%;  /* Ensure the image doesn't overflow its container */
+  height: auto;     /* Maintain the image's aspect ratio */
+}
+
+.research-container {
+  max-width: 1300px; /* This ensures the text doesn't span the entire width. Adjust as needed. */
+  margin: 100px auto 0px; /* Centers the container and adds spacing above and below */
+  padding: 20px; /* Padding around the content for spacing */
+  background-color: var(--color-black); /* Background color */
+  color: var(--color-white); /* Text color */
+  height: auto
+}
+
+.research-container .entry-content a {
+  color: #99431f; /* burnt orange color */
+}
+
+.research-container .entry-content a:hover {
+  color: #cc5500; /* slightly brighter shade for hover effect */
+}
+
+.facilities-container {
+  max-width: 1300px; /* This ensures the text doesn't span the entire width. Adjust as needed. */
+  margin: 100px auto 0px; /* Centers the container and adds spacing above and below */
+  padding: 20px; /* Padding around the content for spacing */
+  background-color: var(--color-black); /* Background color */
+  color: var(--color-white); /* Text color */
+  height: auto
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.blog-post {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #0a0a0a;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.separator {
+  border: 0;
+  height: 1px;
+  background: #ebebeb;
+  margin: 10px 0;
+}
+
+.blog-date {
+  font-size: 0.9em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+
+.blog-image {
+  max-width: 100%;
+  margin: 0 auto 20px; /* Centered the image by auto margin */
+  display: block; /* Make the image a block element to respect margins */
+}
+
+.blog-content {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+.blog-listing {
+    max-width: 800px;
+    margin: 150px auto; /* Space to prevent overlap with the header */
+    padding: 20px;
+    background-color: #0a0a0a;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.blog-summary {
+    border-bottom: 1px solid #ffffff; /* Separate individual blog summaries */
+    padding-bottom: 20px; /* Padding at the bottom of each summary */
+    margin-bottom: 20px; /* Margin between summaries */
+}
+
+.blog-summary h2 {
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.blog-summary h2 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.blog-summary p {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.post-meta {
+    font-size: 0.9em;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #99431f; /* Adjust color for the "Read More" link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.blog-post {
+  border-radius: 15px;
+  /* ... other styles ... */
+}
+
+.section.ablog {
+  border-radius: 10px; /* This will give rounded corners */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* This will add a subtle shadow */
+
+  /* ... other styles ... */
+}
+
+.join-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0; /* Offset for header overlap */
+  padding: 0 20px; /* Added some padding on the sides for smaller screens */
+  max-width: 960px; /* Ensures the content doesn't span the entire screen width */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -250px;
+}
+
+.section {
+  text-align: center;
+  margin-bottom: 50px;
+  width: 100%; /* Adjust as needed */
+}
+
+.boxed-link a {
+  display: block;
+  border: 2px solid var(--color-white);
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-white);
+  transition: background-color 0.3s;
+}
+
+.boxed-link a:hover {
+  background-color: #99431f; /* or whatever color you desire */
+  color: var(--color-black);
+}
+
+.date-box {
+  display: inline-block;
+  border: 1px solid var(--color-white);
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+  font-weight: bold;
+  color: #99431f; /* Adjust as needed */
+}
+
+.our-team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0; /* Offset for header overlap */
+  padding: 0 20px; /* Added some padding on the sides for smaller screens */
+  max-width: 960px; /* Ensures the content doesn't span the entire screen width */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px; 
+  margin-top: 100px;
+}
+
+.team-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto; /* Center the section */
+  max-width: 1000px; /* Adjust this value based on your desired max width */
+}
+
+.team-member {
+  width: calc(33.33% - 20px); /* Adjusted the width to account for the increased spacing */
+  border-top: 5px solid #99431f; /* Change to your preferred color */
+  background-color: #161616; /* Card background color - adjust to your preference */
+  border-radius: 5px;
+  margin-right: 20px; /* Increased spacing between cards in a row */
+  margin-bottom: 30px; /* Increased spacing between rows */
+  position: relative;
+  box-sizing: border-box;
+}
+
+.team-member img {
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: -75px; 
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.3s;
+  
+}
+
+.team-member:hover img {
+  transform: translateY(10%) translateX(-50%); 
+}
+
+.team-info {
+  padding: 50% 15px 15px;
+  overflow: hidden; /* Added overflow: hidden here */
+}
+
+h3, p {
+  margin: 0; /* Reset default margins */
+}
+
+.team-member:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+/* For medium-sized screens like tablets */
+@media (max-width: 768px) {
+  .team-member {
+      width: calc(50% - 10px);
+      margin-right: 15px; /* Keep some space between two cards */
+  }
+  
+  /* Clear the right margin for every second team card */
+  .team-member:nth-of-type(2n) {
+      margin-right: 0;
+  }
+}
+
+/* For smaller screens like mobile devices */
+@media (max-width: 480px) {
+  .team-member {
+      width: 100%;
+      margin-right: 0;
+  }
+}
+
+.members-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* or 'flex-start' if you want left alignment */
+  align-items: stretch; /* This ensures that the items stretch to fill the container */
+  gap: 20px; /* This adds some space between the flex items */
+}
+
+.members-wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.team-section h2 {
+  font-size: 24px;
+  margin-bottom: 100px; /* or adjust as necessary */
+  text-align: center; /* Optional, if you want the title centered */
+}
+
+.team-member .team-info {
+  text-align: center;
+}
+
+
+
+/* For smaller screens like mobile devices */
+@media (max-width: 480px) {
+  .team-member {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 100px;  /* Consider decreasing the margin-bottom for mobile to conserve vertical space */
+  }
+
+  footer {
+    padding: 40px 0; /* Adjusted padding */
+    margin-top: 20px; /* Added margin to separate from content above */
+}
+}
+
+
+
+/* Base styles */
+.video-container {
+  position: relative;
+  height: 10;
+  overflow: hidden;
+  max-width: 640px; /* Limit the maximum width on desktop */
+  margin: auto; /* This will center the div if it has a max-width */
+}
+
+/* This maintains the 16:9 aspect ratio */
+.video-container::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .video-container {
+    max-width: 100%; /* On smaller screens, the video can stretch to full width */
+  }
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    /* Optionally, you can set a specific max-width for smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    /* Optionally, you can set a specific max-width for extra small devices */
+  }
+}
