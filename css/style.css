@@ -229,7 +229,7 @@ section {
 }
 
 .section-ba {
-  background-image: url('../assets/images/seeker1.jpg');
+  background-image: url('../assets/images/leva2.jpg');
 }
 
 .section-ca {
@@ -277,7 +277,7 @@ section {
 }
 
 .section-aserp {
-  background-image: url('../assets/images/serp3.webp');
+  background-image: url('../assets/images/team1.jpg');
 }
 
 .section-av {
@@ -290,6 +290,10 @@ section {
 
 .section-ju {
   background-image: url('../assets/images/utexas2.jpg');
+}
+
+.section-jun {
+  background-image: url('../assets/images/team1.jpg');
 }
 
 .btn {
@@ -954,129 +958,6 @@ body {
   color: #99431f; /* Adjust as needed */
 }
 
-.our-team-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 80px 0; /* Offset for header overlap */
-  padding: 0 20px; /* Added some padding on the sides for smaller screens */
-  max-width: 960px; /* Ensures the content doesn't span the entire screen width */
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px; 
-  margin-top: 100px;
-}
-
-.team-section {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto; /* Center the section */
-  max-width: 1000px; /* Adjust this value based on your desired max width */
-}
-
-.team-member {
-  width: calc(33.33% - 20px); /* Adjusted the width to account for the increased spacing */
-  border-top: 5px solid #99431f; /* Change to your preferred color */
-  background-color: #161616; /* Card background color - adjust to your preference */
-  border-radius: 5px;
-  margin-right: 20px; /* Increased spacing between cards in a row */
-  margin-bottom: 30px; /* Increased spacing between rows */
-  position: relative;
-  box-sizing: border-box;
-}
-
-.team-member img {
-  width: 150px; 
-  height: 150px;
-  border-radius: 50%;
-  position: absolute;
-  top: -75px; 
-  left: 50%;
-  transform: translateX(-50%);
-  transition: transform 0.3s;
-  
-}
-
-.team-member:hover img {
-  transform: translateY(10%) translateX(-50%); 
-}
-
-.team-info {
-  padding: 50% 15px 15px;
-  overflow: hidden; /* Added overflow: hidden here */
-}
-
-h3, p {
-  margin: 0; /* Reset default margins */
-}
-
-.team-member:nth-of-type(3n) {
-  margin-right: 0;
-}
-
-/* For medium-sized screens like tablets */
-@media (max-width: 768px) {
-  .team-member {
-      width: calc(50% - 10px);
-      margin-right: 15px; /* Keep some space between two cards */
-  }
-  
-  /* Clear the right margin for every second team card */
-  .team-member:nth-of-type(2n) {
-      margin-right: 0;
-  }
-}
-
-/* For smaller screens like mobile devices */
-@media (max-width: 480px) {
-  .team-member {
-      width: 100%;
-      margin-right: 0;
-  }
-}
-
-.members-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* or 'flex-start' if you want left alignment */
-  align-items: stretch; /* This ensures that the items stretch to fill the container */
-  gap: 20px; /* This adds some space between the flex items */
-}
-
-.members-wrapper::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-.team-section h2 {
-  font-size: 24px;
-  margin-bottom: 100px; /* or adjust as necessary */
-  text-align: center; /* Optional, if you want the title centered */
-}
-
-.team-member .team-info {
-  text-align: center;
-}
-
-
-
-/* For smaller screens like mobile devices */
-@media (max-width: 480px) {
-  .team-member {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 100px;  /* Consider decreasing the margin-bottom for mobile to conserve vertical space */
-  }
-
-  footer {
-    padding: 40px 0; /* Adjusted padding */
-    margin-top: 20px; /* Added margin to separate from content above */
-}
-}
-
-
 
 /* Base styles */
 .video-container {
@@ -1121,3 +1002,137 @@ h3, p {
     /* Optionally, you can set a specific max-width for extra small devices */
   }
 }
+
+.team-member {
+  background: #1c1c1c;
+  color: var(--color-black);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100px; /* Width for 3 columns, adjusting the 40px for margins */
+  margin: 20px; /* Margin around each card */
+  box-sizing: border-box; /* Includes padding and border in the width and height */
+  height: 275px;
+  border-top: 4px solid #ff6a00; /* Example orange color for the top border */
+  color: #ffffff; /* Set your desired text color, this is white */
+}
+
+.team-member img {
+  width: 150px; /* Smaller width for the image */
+  height: 150px; /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular image */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  margin-bottom: 10px; /* Less space below the image */
+}
+
+/* Text styles for team member names and positions can be adjusted as needed */
+.team-member h3 {
+  font-size: 1em; /* Adjust font size as needed */
+  margin: 5px 0;
+  color: hsl(0, 0%, 100%); /* Example: Set the name to an orange color */
+}
+
+.team-member p {
+  font-size: 0.85em; /* Smaller font size for the position */
+  margin: 5px 0;
+  color: #ffffff; /* Example: Set the job title to a light grey color */
+}
+
+/* Styles for social links */
+.team-member .social-links {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  gap: 8px; /* Less gap between icons */
+}
+
+/* Styles for the social links icons */
+.team-member .social-links a {
+  display: inline-block; /* Makes the link behave like a block element that can be sized */
+  width: 24px; /* Set a fixed width for the icons */
+  height: 24px; /* Set a fixed height for the icons */
+  margin: 0 5px; /* Add some horizontal space between the icons */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.team-member .social-links a img {
+  width: 100%; /* Makes the image fill the anchor element */
+  height: auto; /* Maintains the aspect ratio of the image */
+  vertical-align: middle; /* Aligns the image vertically inside the anchor */
+}
+
+/* Adjust the size of the card if necessary to ensure everything fits */
+.team-member {
+  /* ... other styles ... */
+  padding: 15px; /* You might need to adjust the padding */
+  /* ... other styles ... */
+}
+
+
+.team-container {
+  max-width: 1300px; /* Maximum width of the container */
+  margin: 0 auto; /* Centers the container */
+  padding: 20px; /* Padding inside the container */
+  display: flex; /* Enables flexbox layout */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  justify-content: flex-start; /* Spaces out the cards evenly */
+  background-color: var(--color-black); /* Background color */
+  color: var(--color-white); /* Text color */
+  padding-bottom: 250px;
+  margin-bottom: 5000px;
+
+}/* Styles for desktop view */
+
+/* Styles for desktop view */
+@media (min-width: 992px) {
+  .team-member {
+    width: calc(33.333% - 60px); /* Adjust width for 3 cards per row, subtracting the total margin */
+    margin: 20px; /* Provides space between the cards */
+    /* Other styles remain unchanged */
+  }
+}
+
+/* Styles for mobile view */
+@media (max-width: 991px) {
+  .team-member {
+    width: 100%; /* Full width on mobile */
+    margin: 20px 0; /* Top and bottom margins */
+    /* Other styles remain unchanged */
+  }
+}
+
+/* Ensure that other elements inside the card do not exceed the card's width */
+.team-member > * {
+  max-width: 100%;
+}
+
+
+
+
+/* Adding a title within the team container but on its own row */
+.team-container .team-section-title {
+  width: 100%;
+  text-align: left;
+  margin: -50px 0; /* Adjust top and bottom margin as needed */
+  padding: 0;
+}
+
+.team-container .team-section-title {
+  margin: 20px 0; /* Adjust this to reduce the space on mobile */
+}
+
+/* Remove any default margins from headings that may cause extra space */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Ensure that other elements inside the card do not exceed the card's width */
+.team-member > * {
+  max-width: 100%;
+}
+
