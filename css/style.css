@@ -281,7 +281,7 @@ section {
 }
 
 .section-av {
-  background-image: url('../assets/images/vision.webp');
+  background-image: url('../assets/images/me.jpeg');
 }
 
 .section-atma {
@@ -289,7 +289,7 @@ section {
 }
 
 .section-ju {
-  background-image: url('../assets/images/utexas2.jpg');
+  background-image: url('../assets/images/utexas3.jpg');
 }
 
 .section-jun {
@@ -919,11 +919,11 @@ body {
   max-width: 960px; /* Ensures the content doesn't span the entire screen width */
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -250px;
+  margin-bottom: 1500px;
 }
 
 .section {
-  text-align: center;
+  text-align: left;
   margin-bottom: 50px;
   width: 100%; /* Adjust as needed */
 }
@@ -1135,4 +1135,21 @@ h1, h2, h3, h4, h5, h6 {
 .team-member > * {
   max-width: 100%;
 }
+
+.apply-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #444444; /* This is a green color, change as needed */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px; /* This will make the button rounder */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.apply-button:hover {
+  background-color: #ff8000; /* Darker shade of the button color for hover state */
+}
+
 
